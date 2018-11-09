@@ -48,8 +48,8 @@ func InitDB(dialect string, dbname string, host string, user string, password st
 	db.SetLogger(log.New(os.Stdout, "\r\n", 0))
 }
 
-// DataAccept 获取一个数据库连接
-func DataAccept() *FiDB {
+// DataAccess 获取一个数据库连接
+func DataAccess() *FiDB {
 	var da = new(FiDB)
 	return da
 }

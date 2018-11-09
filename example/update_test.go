@@ -10,7 +10,7 @@ import (
 
 func TestUpdateOne(t *testing.T) {
 	var user model.User
-	da := fiorm.DataAccept()
+	da := fiorm.DataAccess()
 	da.GetItemByID(&user, 5)
 
 	user.Address = "udate1"

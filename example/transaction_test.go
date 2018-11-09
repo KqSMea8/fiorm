@@ -44,7 +44,7 @@ func TestSimpleTx(t *testing.T) {
 	user3.NullString = ""
 	user3.Birthday = mysql.NullTime{Time: time.Now(), Valid: false}
 
-	da := fiorm.DataAccept()
+	da := fiorm.DataAccess()
 	tx := da.BeginTranction()
 
 	tx.InsertItem(&user3)

@@ -10,7 +10,7 @@ import (
 
 func TestDeleteOne(t *testing.T) {
 	var user model.User
-	da := fiorm.DataAccept()
+	da := fiorm.DataAccess()
 	da.GetItemByID(&user, 6)
 
 	da.DeleteItem(&user)

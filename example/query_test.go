@@ -11,7 +11,7 @@ import (
 func TestGetItemByID(t *testing.T) {
 	var user model.User
 
-	da := fiorm.DataAccept()
+	da := fiorm.DataAccess()
 	da.GetItemByID(&user, 5)
 
 	fmt.Println(user.Name)
